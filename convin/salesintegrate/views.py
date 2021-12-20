@@ -22,9 +22,6 @@ def oauth(request,domain="login"):
         "redirect_uri": redirect_uri,
         "response_type": "code",
         # "scope": scope,
-        # # track whether or not this was a prod org, or a sandbox
-        # # this is separate from the state query param the user
-        # # may pass to this view.
         # "state": domain,
     }
     args = urllib.parse.urlencode(url_args)
